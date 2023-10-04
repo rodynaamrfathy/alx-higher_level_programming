@@ -12,7 +12,7 @@ int check_cycle(listint_t *list)
 	listint_t *check = list;
 
 	check = check->next;
-	while (check != list->next)
+	while (check != list)
 	{
 		check = check->next;
 		if (check == NULL)
