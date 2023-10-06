@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-from uppercasealphabet import a
-print(a)
+import uppercasealphabet
+print(dir(uppercasealphabet))
