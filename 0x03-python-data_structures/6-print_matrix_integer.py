@@ -5,4 +5,4 @@ def print_matrix_integer(matrix=[[]]):
     for row in transposed:
         for item in row:
             print("{:d}".format(item), end=' ')
-            print()
+        print()
