@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 import sys
 def safe_print_integer_err(value):
-    value = int(value)
     try:
-        print("{:d}".format(value))
+        value_as_int = int(value)
+        print("{:d}".format(value_as_int))
         return True
     except (ValueError, TypeError):
-        sys.stderr.write("Exception: Unknown format code 'd' for object of type {}'".format(value) + \n)
+        sys.stderr.write("Exception: Unknown format code 'd' for object of type '{}'\n".format(value.__class__.__name__))
         return False
