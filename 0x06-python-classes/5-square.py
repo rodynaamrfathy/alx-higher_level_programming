@@ -35,7 +35,7 @@ class Square:
         """prints in stdout the square with the character #:
             if size is equal to 0, print an empty line
         """
-        if size = 0:
+        if size == 0:
             print()
             return None
 
