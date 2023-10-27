@@ -13,11 +13,13 @@ class Square:
         """
         self.__size = size
 
+
     @property
     def size(self):
         """"Get/set the current size of the square."""
         return (self.__size)
-    
+
+
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
