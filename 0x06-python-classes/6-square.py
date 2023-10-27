@@ -36,9 +36,9 @@ class Square:
     @position.setter
     def position(self, value):
         """Check if the position is true to specifications."""
-        if not isinstance(value[0], int) and not isinstance(value[1], int):
+        if not isinstance(value[0], int) or not isinstance(value[1], int):
             raise TypeError("size must be an integer")
-        elif value[0] < 0 and value[1] < 0:
+        elif value[0] < 0 or value[1] < 0:
             raise ValueError("size must be >= 0")
         self.__position = value
 
