@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a class Rectangle."""
 
+
 class Rectangle:
     """Represents a Rectangle."""
 
@@ -21,7 +22,8 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Sets the value of the rectangle width and checks if it is correct."""
+        """Sets the value of the rectangle width
+            and checks if it is correct."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -35,10 +37,10 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Sets the value of the rectangle height and checks if it is correct."""
+        """Sets the value of the rectangle height
+            and checks if it is correct."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
