@@ -24,7 +24,6 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
-
 class Rectangle(BaseGeometry):
     """Represents a rectangle
     Private instance attributes:
@@ -41,7 +40,7 @@ class Rectangle(BaseGeometry):
             - height: rectangle height
         """
 
-        self.integer_validator(name, width)
-        self.integer_validator(name, height)
-        __self.width = width
-        __self.height = height
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
