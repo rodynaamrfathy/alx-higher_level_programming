@@ -26,9 +26,21 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """ a rectangle class inherted from BaseGeometry"""
+    """Represents a rectangle
+    Private instance attributes:
+        - width
+        - height
+    Inherits from BaseGeometry
+    """
 
     def __init__(self, width, height):
+        """Initializes an instance
+
+        Args:
+            - width: rectangle width
+            - height: rectangle height
+        """
+
         self.integer_validator(name, width)
         self.integer_validator(name, height)
         __self.width = width
