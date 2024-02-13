@@ -1,3 +1,3 @@
 #!/usr/bin/node
-const myvar = process.argv[2] + 'is' + process.argv[3];
+const myvar = process.argv[2] + ' is ' + process.argv[3];
 console.log(myvar);
