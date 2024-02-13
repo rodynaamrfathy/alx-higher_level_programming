@@ -1,16 +1,8 @@
-Why JavaScript programming is amazing
-How to run a JavaScript script
-How to create variables and constants
-What are differences between var, const and let
-What are all the data types available in JavaScript
-How to use the if, if ... else statements
-How to use comments
-How to affect values to variables
-How to use while and for loops
-How to use break and continue statements
-What is a function and how do you use functions
-What does a function that does not use any return statement return
-Scope of variables
-What are the arithmetic operators and how to use them
-How to manipulate dictionary
-How to import a filepython
+Higher Level Programming Projects
+This repo contains all the projects that I have done in the alx-Holberton curriculum on Higher level programming.
+
+What Does High-Level Language (HLL) Mean?
+
+A high-level language is any programming language that enables development of a program in a much more user-friendly programming context and is generally independent of the computer's hardware architecture.
+
+A high-level language has a higher level of abstraction from the computer, and focuses more on the programming logic rather than the underlying hardware components such as memory addressing and register utilization
