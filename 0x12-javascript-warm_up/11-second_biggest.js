@@ -12,7 +12,7 @@ if (process.argv[2] === undefined || isNaN(process.argv[2]) || Number(process.ar
     }
   }
 
-  let newlist = [];
+  const newlist = [];
   let j = 0;
 
   // Fill newlist without the max value
