@@ -4,11 +4,6 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    if len(sys.argv) != 5:
-        print(
-        "Usage: {} <username> <password> <database> <state_name>".
-        format(sys.argv[0]))
-        sys.exit(1)
     db = MySQLdb.connect(
             host="localhost",
             user=sys.argv[1],
@@ -20,8 +15,8 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
-                .format(state_name))
+    cur.execute("SELECT * FROM states WHERE name LIKE %s"
+                , (state_name, ))
     rows = cur.fetchall()
     for row in rows:
         print(row)
