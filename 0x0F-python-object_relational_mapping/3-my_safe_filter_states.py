@@ -12,9 +12,8 @@ if __name__ == "__main__":
             port=3306
     )
 
-    state_name = sys.argv[4]
-
     cur = db.cursor()
+    state_name = sys.argv[4]
     cur.execute("SELECT * FROM states WHERE name LIKE %s"
                 , (state_name, ))
     rows = cur.fetchall()
